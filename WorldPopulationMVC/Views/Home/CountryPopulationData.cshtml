@@ -1,0 +1,42 @@
+﻿@model IEnumerable<WorldPopulationMVC.Data.DTO.ICountryPopulationData>
+
+@{
+    ViewData["Title"] = "Countries Population";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Countries Population</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Source)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CountryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Population)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Source)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.CountryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Population)
+            </td>
+
+        </tr>
+}
+    </tbody>
+</table>
