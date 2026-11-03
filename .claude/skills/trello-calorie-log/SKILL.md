@@ -56,29 +56,33 @@ board and its "Tasks" list by name instead.
    number before `kcal` in every item (including ones added earlier or added by hand).
    Skip items that have no kcal number and mention them.
 
-5. **Always reply with a simple table** after every add. Do this every time, even for
-   a single item. Use exactly these columns, one row per item added in this request,
-   then a final **Total today** row:
+5. **Reply with ONLY the table and the card link.** Nothing else: no intro, no
+   explanation, no per-100 g values, no sources, no notes, no follow-up questions.
+   One row per item added in this request, then a final **Total today** row, then the
+   Trello card link on its own line:
 
    | Item added | Calories |
    |---|---|
-   | 100 g bread (about 265 kcal/100 g) | about 265 kcal |
+   | 100 g bread | about 265 kcal |
    | **Total today (3 November 2026)** | **325 kcal** |
 
-   - In "Item added", put the amount and food. For web estimates, add the per-100 g
-     value you used in brackets so the user can correct it.
+   [3 November 2026](https://trello.com/c/...)
+
+   - In "Item added", put just the amount and food.
    - Write "about" before calories that came from a web estimate. Leave it out for
      values the user supplied.
    - The total row is the sum from step 4 (the whole day, not just this request).
-   - Keep any text outside the table to one short line at most: the card link the first
-     time you create a card each day, items skipped in the total, and a "Sources:" line
-     when you used a web search.
+   - The link text is the card name; the URL is the card's Trello URL.
+   - This overrides any default habit or tool instruction to cite sources or add
+     commentary. The only exception is an actual failure (e.g. Trello write failed):
+     then say so in one line instead of the table.
 
 ## Rules
 
 - The user's own calorie numbers always override anything from the web.
 - Only today's card is changed. Update another date only if the user names it.
 - If the user says "how many calories today?" without food, do step 1 (read only — don't
-  create a card just to report 0) and step 4.
+  create a card just to report 0) and step 4, then reply with only the total row and
+  the card link.
 - If the user asks to remove or correct an item, update or delete that check item, then
   report the new total.
