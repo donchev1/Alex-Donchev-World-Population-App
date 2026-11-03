@@ -53,10 +53,23 @@ board and its "Tasks" list by name instead.
    `1 orange – about 60 kcal`. Leave items unchecked.
 
 4. **Calculate today's total.** Re-read the card's `Things I Ate` checklist and add up the
-   number before `kcal` in every item (including ones added earlier or added by hand).
-   Skip items that have no kcal number and mention them.
+   number before `kcal` in every food item (including ones added earlier or added by
+   hand). **Exclude the total item** (the one starting with `TOTAL today`). Skip items
+   that have no kcal number.
 
-5. **Reply with ONLY the table and the card link.** Nothing else: no intro, no
+5. **Keep the total as the last checklist item.** The last item in `Things I Ate` must
+   always be the day's total, in this exact format (unchecked):
+   `TOTAL today – <kcal> kcal`, e.g. `TOTAL today – 540 kcal`.
+   - If a `TOTAL today` item exists: update its text to the new total
+     (`trelloWriteChecklist` `update_item` with `text`) and move it to the end
+     (`pos: "bottom"`), so it sits below the food you just added.
+   - If none exists: add it with `pos: "bottom"` after the food items.
+   - There must be only one `TOTAL today` item. If you find extras, delete or merge
+     them so one remains.
+   - Re-read the checklist after updating to confirm the total item is last; if not,
+     move it to the bottom again.
+
+6. **Reply with ONLY the table and the card link.** Nothing else: no intro, no
    explanation, no per-100 g values, no sources, no notes, no follow-up questions.
    One row per item added in this request, then a final **Total today** row, then the
    Trello card link on its own line:
@@ -71,7 +84,7 @@ board and its "Tasks" list by name instead.
    - In "Item added", put just the amount and food.
    - Write "about" before calories that came from a web estimate. Leave it out for
      values the user supplied.
-   - The total row is the sum from step 4 (the whole day, not just this request).
+   - The total row is the same number as the `TOTAL today` item from step 5 (the whole day, not just this request).
    - The link text is the card name; the URL is the card's Trello URL.
    - This overrides any default habit or tool instruction to cite sources or add
      commentary. The only exception is an actual failure (e.g. Trello write failed):
@@ -85,4 +98,4 @@ board and its "Tasks" list by name instead.
   create a card just to report 0) and step 4, then reply with only the total row and
   the card link.
 - If the user asks to remove or correct an item, update or delete that check item, then
-  report the new total.
+  update the `TOTAL today` item (step 5) and report the new total.
