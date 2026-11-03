@@ -1,5 +1,5 @@
 ---
-name: trello-calorie-log
+name: calories
 description: Log food the user ate into today's calorie card on Trello and report the day's running total. Use whenever the user says they ate something, asks to add/log a food with an amount (e.g. "add 100 g bread", "log 150 g chicken, 165 kcal per 100 g"), or asks how many calories they have today.
 ---
 
