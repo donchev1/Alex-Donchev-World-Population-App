@@ -56,12 +56,23 @@ board and its "Tasks" list by name instead.
    number before `kcal` in every item (including ones added earlier or added by hand).
    Skip items that have no kcal number and mention them.
 
-5. **Reply briefly**, for example:
-   > Added **100 g bread – about 265 kcal** (generic value: 265 kcal/100 g).
-   > **Today (3 November 2026): 325 kcal total.**
+5. **Always reply with a simple table** after every add. Do this every time, even for
+   a single item. Use exactly these columns, one row per item added in this request,
+   then a final **Total today** row:
 
-   Name the per-100 g value you used for web estimates so the user can correct it. Include
-   the card link the first time you create a card each day.
+   | Item added | Calories |
+   |---|---|
+   | 100 g bread (about 265 kcal/100 g) | about 265 kcal |
+   | **Total today (3 November 2026)** | **325 kcal** |
+
+   - In "Item added", put the amount and food. For web estimates, add the per-100 g
+     value you used in brackets so the user can correct it.
+   - Write "about" before calories that came from a web estimate. Leave it out for
+     values the user supplied.
+   - The total row is the sum from step 4 (the whole day, not just this request).
+   - Keep any text outside the table to one short line at most: the card link the first
+     time you create a card each day, items skipped in the total, and a "Sources:" line
+     when you used a web search.
 
 ## Rules
 
