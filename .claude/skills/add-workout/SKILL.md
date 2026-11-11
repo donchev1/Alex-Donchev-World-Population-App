@@ -76,19 +76,22 @@ Rules:
    - **Calories burned today** and **this week**: sum the kcal at the end of each item.
      If an older item has no kcal, calculate it with the rates above and update that item's
      text so it has one.
-   - **Steps this week**: sum the steps of all walking items (convert km-only walks with
-     1,520 steps per km).
-   - **Km run this week**: sum the km of all running items.
+   - **Steps today** and **this week**: sum the steps of all walking items (convert
+     km-only walks with 1,520 steps per km).
+   - **Km run today** and **this week**: sum the km of all running items.
 
-5. **Reply with ONLY this table and the card link.** No intro, no commentary:
+5. **Reply with ONLY this table and the card link.** No intro, no commentary. Always
+   include every row below (show 0 when there is nothing yet), with today's rows first:
 
    | Workout added | Calories burned |
    |---|---|
-   | Walking – 2523 steps | about 106 kcal |
-   | **Burned today (11 November 2026)** | **447 kcal** |
-   | **Burned this week (9–15 Nov)** | **1,457 kcal** |
-   | **Steps this week** | **9,090** |
-   | **Running this week** | **5 km** |
+   | Walking – 5038 steps | about 212 kcal |
+   | **Burned today (11 November 2026)** | **1,094 kcal** |
+   | **Steps today** | **8,061** |
+   | **Running today** | **5 km** |
+   | **Burned this week (9–15 Nov)** | **2,104 kcal** |
+   | **Steps this week** | **14,128** |
+   | **Running this week** | **10 km** |
 
    [11 November 2026](https://trello.com/c/...)
 
