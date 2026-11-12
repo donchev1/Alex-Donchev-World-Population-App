@@ -103,7 +103,7 @@ replaces the one here (update this table).
 | Feta / сирене | 243 | User's cheese |
 | Соленки | 456 | User's product |
 | Чипс | 465 | User's product |
-| Meat jerky | 193 | User's product |
+| Meat / beef jerky | 190 | User's product |
 | Овесени ядки | 381 | User's product |
 | Кисело мляко | 62 | User's yogurt |
 | Homemade ice cream (apple, strawberry, protein) | 80 (estimate) | Estimated from ingredients |
