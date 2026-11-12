@@ -90,6 +90,26 @@ board and its "Tasks" list by name instead.
      commentary. The only exception is an actual failure (e.g. Trello write failed):
      then say so in one line instead of the table.
 
+## Saved food values (use these instead of searching)
+
+Values the user gave for their own products, or that were researched once. Use them
+whenever the user names the food without a kcal value. A new value the user gives
+replaces the one here (update this table).
+
+| Food | kcal per 100 g | Source |
+|---|---|---|
+| Мусака (moussaka with mince and potatoes) | 165 (estimate) | Researched: store moussaka 168, home recipes 133–165 (health-diet.ru) |
+| White bread (бял хляб) | 250 | User's bread |
+| Feta / сирене | 243 | User's cheese |
+| Соленки | 456 | User's product |
+| Чипс | 465 | User's product |
+| Meat jerky | 193 | User's product |
+| Овесени ядки | 381 | User's product |
+| Кисело мляко | 62 | User's yogurt |
+| Homemade ice cream (apple, strawberry, protein) | 80 (estimate) | Estimated from ingredients |
+| Egg, feta and yogurt spread (смес от яйце, сирене и кисело мляко) | 145 (estimate) | Estimated from 3 eggs, feta and yogurt |
+| Biscuits | 90 per biscuit | User: 2 biscuits = 180 kcal |
+
 ## Rules
 
 - The user's own calorie numbers always override anything from the web.
