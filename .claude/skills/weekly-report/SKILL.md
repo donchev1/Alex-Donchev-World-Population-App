@@ -23,11 +23,14 @@ wants going over a goal to count, e.g. 136% walking).
 ## Weight goal
 
 - Goal: **83.0 kg by 31 December 2026**.
-- Readings so far: 87.9 kg (Mon 2 Nov), 87.0 kg (Mon 9 Nov), 87.1 kg (Thu 12 Nov).
-  Add new readings here when the user gives them.
-- Plan from 9 Nov: lose about **540 g a week** (77 g a day). Monday targets:
+- Readings so far: 87.9 kg (Mon 2 Nov), 87.0 kg (Mon 9 Nov), 87.1 kg (Thu 12 Nov),
+  86.8 kg (Mon 16 Nov). Add new readings here when the user gives them.
+- Original plan from 9 Nov: about 540 g a week. Monday targets:
   16 Nov 86.5 · 23 Nov 85.9 · 30 Nov 85.4 · 7 Dec 84.8 · 14 Dec 84.3 · 21 Dec 83.8 ·
-  28 Dec 83.2 · 31 Dec 83.0. If the user is behind, recalculate from the latest weight.
+  28 Dec 83.2 · 31 Dec 83.0.
+- On 16 Nov the user was 0.3 kg behind (86.8 vs 86.5). Required pace from 86.8 kg is now
+  about **590 g a week** (84 g a day, ~650 kcal/day deficit). If the user is behind,
+  recalculate from the latest weight.
 - User profile: 33 years, 175 cm. Estimated maintenance about 2,500–2,800 kcal/day.
 - Remind them that day-to-day swings of 0.5–2 kg are water/salt; compare Monday weigh-ins.
 
