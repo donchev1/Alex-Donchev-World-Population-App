@@ -71,20 +71,25 @@ board and its "Tasks" list by name instead.
 
 6. **Reply with ONLY the table and the card link.** Nothing else: no intro, no
    explanation, no per-100 g values, no sources, no notes, no follow-up questions.
-   One row per item added in this request, then a final **Total today** row, then the
-   Trello card link on its own line:
+   One row per item added in this request, then a **Total** row, then a **Left** row,
+   then the Trello card link on its own line:
 
    | Item added | Calories |
    |---|---|
    | 100 g bread | about 265 kcal |
-   | **Total today (3 November 2026)** | **325 kcal** |
+   | **Total** | **1,698 kcal** |
+   | **Left** | **102 kcal** |
 
-   [3 November 2026](https://trello.com/c/...)
+   [19 November 2026](https://trello.com/c/...)
 
    - In "Item added", put just the amount and food.
    - Write "about" before calories that came from a web estimate. Leave it out for
      values the user supplied.
-   - The total row is the same number as the `TOTAL today` item from step 5 (the whole day, not just this request).
+   - The **Total** row is just labelled "Total" (no date) and is the same number as the
+     `TOTAL today` item from step 5 (the whole day, not just this request).
+   - The **Left** row is the user's **daily limit of 1,800 kcal** minus the Total.
+     If they are over the limit, show it as `**over by N kcal**` instead.
+     (Update the 1,800 here if the user sets a new daily limit.)
    - The link text is the card name; the URL is the card's Trello URL.
    - This overrides any default habit or tool instruction to cite sources or add
      commentary. The only exception is an actual failure (e.g. Trello write failed):
