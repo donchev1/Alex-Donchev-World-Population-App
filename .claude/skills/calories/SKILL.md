@@ -114,6 +114,7 @@ replaces the one here (update this table).
 | Homemade ice cream (apple, strawberry, protein) | 80 (estimate) | Estimated from ingredients |
 | Egg, feta and yogurt spread (смес от яйце, сирене и кисело мляко) | 145 (estimate) | Estimated from 3 eggs, feta and yogurt |
 | Biscuits | 90 per biscuit | User: 2 biscuits = 180 kcal |
+| Тиквеник (pumpkin, sugar, walnuts, filo pastry) | 280 (estimate) | Typical home recipes 250–300 |
 
 ## Rules
 
