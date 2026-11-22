@@ -91,5 +91,6 @@ Moved on 22 Nov 2026: 4–15 Nov (3 Nov was already gone from Tasks).
 |---|---|---|
 | 2–8 Nov 2026 | 109% (run 100, walk 136, train 100, game dev 100) | https://claude.ai/artifact/4kzZkmKX3y96hBGaCEvAd9 |
 | 9–15 Nov 2026 | 85% (run 100, walk 101, train 100, game dev 40) | https://claude.ai/artifact/UNJH8zVWPmSbyiNEWBbUsj |
+| 16–22 Nov 2026 | 101% (run 100, walk 105, train 100, game dev 100) | https://claude.ai/artifact/H2HMz5bVHyccBHNt63cDk4 |
 
-Add each new week to this table. Average calories: 2–8 Nov 1,736 kcal/day; 9–15 Nov 1,923 kcal/day.
+Add each new week to this table. Average calories: 2–8 Nov 1,736 kcal/day; 9–15 Nov 1,923 kcal/day; 16–22 Nov 1,865 kcal/day (daily limit 1,800).
