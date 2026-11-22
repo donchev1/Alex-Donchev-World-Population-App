@@ -1,12 +1,16 @@
 ---
 name: weekly-report
-description: Build the user's weekly goals report (HTML page) from their Trello day cards - goal progress for running, walking, training and game dev, calories, and weight vs the 83 kg goal. Use when the user asks for "the report", "weekly report", "репорт", "отчет за седмицата", or how they did against their goals this week.
+description: Build the user's weekly goals report (HTML page) from their Trello day cards - goal progress for running, walking, training and game dev, calories, and weight vs the 83 kg goal - and move past weeks' day cards from Tasks to Achievements. Use when the user asks for "the report", "weekly report", "репорт", "отчет за седмицата", how they did against their goals this week, or to tidy last week's cards.
 ---
 
 # Weekly goals report
 
 A weekly HTML report of how the user did against their goals, built from their Trello
-day cards and published as an Artifact page.
+day cards and published as an Artifact page. Each run also tidies Trello: day cards from
+earlier weeks move from **Tasks** to **Achievements**.
+
+The goals below stay the same every week **until the user changes them**. When they do,
+update the table here (and commit the skill).
 
 ## The user's weekly goals (Monday–Sunday)
 
@@ -63,6 +67,23 @@ Write one self-contained HTML page (light + dark theme, phone-friendly), in this
 9. Footer: where the data came from and how the score is calculated.
 
 Publish a new Artifact each week, titled `Weekly Goals D–D Mon` (e.g. `Weekly Goals 9–15 Nov`).
+
+## Move past weeks' cards to Achievements (every time this skill runs)
+
+1. List the open cards in **Tasks** (`trelloReadCard` `list_by_list`,
+   ARI `ari:cloud:trello::list/workspace/60cd430fa6f13f3800e0e72b/6104fc70d2d5591d90a81348`).
+2. Pick only cards whose name is exactly a date `D Month YYYY` and that are **before this
+   week's Monday** (Europe/Bucharest). Cards for the current Mon–Sun week stay in Tasks.
+   If the report is for a week that has just ended (run on Sunday night or later), that
+   week's cards move too once the report is published.
+3. Move each one to **Achievements**
+   (ARI `ari:cloud:trello::list/workspace/60cd430fa6f13f3800e0e72b/63bbafd95b7d2a01bfd9dca8`)
+   with `trelloWriteCard` `move`, oldest first, using increasing `pos` values (e.g.
+   900000000 + day number) so they stay in date order at the bottom.
+4. Never move, edit or archive any other card (e.g. "To buy", "Memories").
+5. Mention in the reply how many cards moved.
+
+Moved on 22 Nov 2026: 4–15 Nov (3 Nov was already gone from Tasks).
 
 ## Past reports
 
