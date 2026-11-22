@@ -43,6 +43,11 @@ board and its "Tasks" list by name instead.
      calculate from it. If the amount is a count ("1 orange", "2 eggs"), use a typical
      per-item value.
    - Round the result to the nearest whole kcal.
+   - **Use the most realistic value for what the user described, not the high end.**
+     Words like "some", "a little", "a few", "малко" mean a small amount: estimate a
+     light portion (e.g. 1 tsp oil, a light drizzle of dressing, 2–3 croutons). Only use
+     a generous/high estimate when the user says it was a lot, or the dish is normally
+     heavy (fried, creamy). Don't wait to be asked to pick the realistic number.
 
 3. **Add one check item per food** to the `Things I Ate` checklist using this format:
    - User-supplied value: `<amount> <food> – <kcal> kcal`
