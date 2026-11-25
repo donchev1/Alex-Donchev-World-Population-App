@@ -92,7 +92,9 @@ board and its "Tasks" list by name instead.
      values the user supplied.
    - The **Total** row is just labelled "Total" (no date) and is the same number as the
      `TOTAL today` item from step 5 (the whole day, not just this request).
-   - The **Left** row is the user's **daily limit of 1,800 kcal** minus the Total.
+   - The **Left** row is the user's **daily limit** minus the Total. The normal limit is
+     **1,800 kcal**. **Temporary limit: 1,455 kcal from 26 to 29 November 2026** (to bring
+     the week of 23–29 Nov back to a 1,800 average); from 30 Nov it is 1,800 again.
      If they are over the limit, show it as `**over by N kcal**` instead.
      (Update the 1,800 here if the user sets a new daily limit.)
    - The link text is the card name; the URL is the card's Trello URL.
