@@ -17,7 +17,7 @@ update the table here (and commit the skill).
 | Goal | Target | How to measure |
 |---|---|---|
 | Run | **2 × 5 km** | Count running items in `Workouts`; % = runs ÷ 2 (or km ÷ 10) |
-| Walk | **20,000 steps** in the week | Sum steps of walking items; km-only walks × 1,520 steps/km |
+| Walk | **29 km** in the week (since 23 Nov 2026; was 20,000 steps) | Sum km of walking items; steps-only walks ÷ 1,505 steps/km |
 | Train | **7 muscle groups**: abs, chest, triceps, biceps, back, legs, shoulders | Each group counts once if trained any day (squats = legs) |
 | Game dev | **5 hours** | Sum hours in the `Game Dev` checklists |
 
