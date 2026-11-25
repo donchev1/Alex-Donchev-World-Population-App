@@ -29,7 +29,7 @@ If a board/list ARI stops resolving, look up the "Personal Schedule" board and i
 ## User profile (for calorie estimates)
 
 - Age 33, male, height 175 cm, weight **87 kg** (update this if the user gives a new weight).
-- Walking pace: about **1,520 steps per km** (measured from the user's own walks).
+- Walking pace: about **1,505 steps per km** (user's treadmill: 6,000 steps = 3.99 km, 25 Nov 2026).
 
 ## Calories burned — fixed rates (do not search the web each time)
 
@@ -46,7 +46,7 @@ for an 87 kg person. Formula: kcal = MET × kg × hours.
 Rules:
 - **If the user gives the calories burned** (e.g. "225 calories"), use their number, not the rate.
 - Walking given only in km or time: convert with the rates above. Walking given only in
-  km: steps = km × 1,520 (for the weekly step total).
+  km: steps = km × 1,505 (for the weekly step total).
 - Running given only in time: assume about 9 km/h to get km.
 - If the user's weight changes, rescale: walking kcal/step = 0.00048 × kg, running kcal/km = kg,
   strength kcal/min = 3.5 × 3.5 × kg / 200.
@@ -77,7 +77,7 @@ Rules:
      If an older item has no kcal, calculate it with the rates above and update that item's
      text so it has one.
    - **Steps today** and **this week**: sum the steps of all walking items (convert
-     km-only walks with 1,520 steps per km).
+     km-only walks with 1,505 steps per km).
    - **Km run today** and **this week**: sum the km of all running items.
 
 5. **Reply with ONLY this table and the card link.** No intro, no commentary. Always
